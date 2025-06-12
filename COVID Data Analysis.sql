@@ -1,9 +1,3 @@
-/*
-Covid 19 Data Exploration 
-
-Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
-
-*/
 
 Select *
 From PortfolioProject..CovidDeaths
@@ -146,7 +140,7 @@ From #PercentPopulationVaccinated
 
 
 
--- Creating View to store data for later visualizations
+-- Creating View to store data for visualizations
 
 Create View PercentPopulationVaccinated as
 Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
